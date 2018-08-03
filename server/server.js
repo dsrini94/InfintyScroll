@@ -1,10 +1,8 @@
-'use strict'
 const http = require('http')
     , express = require('express')
     , app = express()
     , server = http.createServer(app)
     , path = require('path')
-    , assert = require('assert')
     , PORT = process.env.PORT || 1100 ;
 
 
