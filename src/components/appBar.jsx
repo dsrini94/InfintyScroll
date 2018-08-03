@@ -30,13 +30,15 @@ class AppBar extends Component {
         </div>
 
         <div>
-          <input type="text" list="data" placeholder="Search.." onChange={(e) =>this.props.searchHandler(e.target.value)}/>
-          <input id="search_submit" value="Rechercher" type="submit" />
+          <form>
+          <input type="text" list="data" placeholder="Search.." onChange={(e) =>this.props.searchHandler(e.target.value)} style={styles.input}/>
+          {/* <img src="./../../assets/images/search.png" id="search"/> */}
            <datalist id="data">
                {this.props.SearchReducer.data.map((item,index) =>
                    (<option value={item.name} key={index}/>)
                )}
            </datalist>
+         </form>
         </div>
       </div>
     )
@@ -63,10 +65,13 @@ const styles = {
     marginTop:'20px',
   },
   input:{
-    margin:'20px 5px 20px 10px',
-    border:'none',
-    borderRadius:'15px',
-    width:'80%',
+    width: '130px',
+    boxSizing: 'borderBox',
+    border: '2px solid #ccc',
+    borderRadius: '4px',
+    fontSize: '16px',
+    backgroundColor: 'black',
+    color:'white',
   }
 }
 

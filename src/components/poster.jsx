@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 
 //importing semantic ui components
-import { Header } from 'semantic-ui-react'
+import { Header } from 'semantic-ui-react';
+
+var divider = window.innerWidth > 766 ? 2 : 4;
 
 module.exports = (props) => {
 
@@ -17,7 +19,8 @@ module.exports = (props) => {
 
 const styles = {
     poster:{
-      height:'150px',
+      height:window.innerHeight/divider,
+      width:window.innerWidth/4,
       marginTop:'25px'
     },
     header:{

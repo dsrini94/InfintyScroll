@@ -55,6 +55,7 @@ export default class PosterCollection extends Component{
 
     return(
       <div id="posterCollection" style={styles.container}>
+        <center>
         <Grid columns={3} style={{margin:'auto'}}>
           <Grid.Row style={{margin:0}} className="poster">
             {
@@ -66,6 +67,7 @@ export default class PosterCollection extends Component{
             }
         </Grid.Row>
         </Grid>
+      </center>
       </div>)
   }
 }
@@ -73,5 +75,6 @@ export default class PosterCollection extends Component{
 const styles = {
   container:{
     backgroundColor:'#303133',
+    margin:'auto',
   },
 }
