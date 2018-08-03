@@ -4,6 +4,11 @@ var config = {
       path:'/',
       filename: 'index.js',
    },
+   
+   devServer: {
+      inline: true,
+      port: PROCESS.env.PORT || 8181
+   },
    module: {
       loaders: [
          {
