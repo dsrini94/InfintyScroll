@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 1100 ;
 var config = {
    entry: './main.js',
    output: {
@@ -7,7 +8,7 @@ var config = {
    
    devServer: {
       inline: true,
-      port: PROCESS.env.PORT || 8181
+      port: PORT
    },
    module: {
       loaders: [
