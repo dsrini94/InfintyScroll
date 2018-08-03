@@ -1,10 +1,11 @@
 
-var config = {
-   entry: './main.js',
+var config ={
+   entry: __dirname+'/main.js',
    output: {
-      path:'/',
+      path:__dirname+'/',
       filename: 'index.js',
    },
+
    module: {
       loaders: [
          {
